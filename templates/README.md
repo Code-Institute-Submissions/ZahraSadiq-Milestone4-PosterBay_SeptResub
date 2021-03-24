@@ -1,0 +1,1 @@
+Fixed Class "Product" has no objects by installing pip install pylint-django

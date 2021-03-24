@@ -2,20 +2,54 @@
 {% load static %}
 
 {% block page_header %}
-    <div class="container header-container">
-        <div class="row">
-            <div class="col"></div>
-        </div>
+<div class="container header-container">
+    <div class="row">
+        <div class="col"></div>
     </div>
+</div>
 {% endblock %}
 
 {% block content %}
-    <div class="container header-container">
-        <div class="row">
-            <div class="col">
-                {{ products }}
+<!-- To hide the background image -->
+<div class="overlay"></div>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col text-center mt-3">
+            <h2>Products</h2>
+            <hr class="w-50 mb-1">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-10 product-container offset-1">
+            <div class="row mt-1 mb-2"></div>
+            <div class="row">
+                {% for product in products %}
+                <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3 mb-3">
+                    <div class="card h-100 mx-2">
+                        {% if product.image %}
+                        <a href="">
+                            <img class="card-img-top img-fluid" src="{{ product.image.url }}" alt="{{ product.name }}">
+                        </a>
+                        {% else %}
+                        <a href="">
+                            <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}noimage.jpg" alt="{{ product.name }}">
+                        </a>
+                        {% endif %}
+                        <div class="card-body">
+                            <!-- Product Name -->
+                            <h5 class="card-title">{{ product.name }}</h5>
+                            <!-- Artist -->
+                            <p class="card-text">By: {{ product.artist }}</p>
+                        </div>
+                        <div class="card-footer">
+                            <p class="lead mb-0 text-left font-weight-bold">${{ product.price }}</p>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
             </div>
         </div>
     </div>
+</div>
 
 {% endblock %}

@@ -78,9 +78,26 @@ i .search-icon {
     background: #000 !important;
 }
 
+.overlay {
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    background: white;
+    z-index: -1;
+}
+
 /* Headings */
 .banner-text {
     color: #000;
+}
+
+/* Product Cards */
+.card-img-top {
+    width: 100%;
+    height: 25vw;
+    object-fit: cover;
 }
 
 /* -------------------------------- Media Queries */
