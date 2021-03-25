@@ -1,14 +1,14 @@
 <div class="collapse navbar-collapse" id="main-nav">
     <ul class="navbar-nav w-auto mx-auto">
         <li class="nav-item dropdown">
-            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="all-products-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="shop-all-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Shop All
             </a>
-            <div class="dropdown-menu border-0" aria-labelledby="all-products-link">
+            <div class="dropdown-menu border-0" aria-labelledby="shop-all-link">
                 <a href="" class="dropdown-item">By Price</a>
                 <a href="" class="dropdown-item ">By Rating</a>
                 <a href="" class="dropdown-item ">By Category</a>
-                <a href="" class="dropdown-item">All Products</a>
+                <a href="{% url 'products' %}" class="dropdown-item">All Products</a>
             </div>
         </li>
 
@@ -17,9 +17,14 @@
                 Shop by Artist
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="artist-link">
-                <a href="" class="dropdown-item">Activewear &amp; Essentials</a>
-                <a href="" class="dropdown-item">Jeans</a>
-                <a href="" class="dropdown-item">Shirts</a>
+                <a href="" class="dropdown-item">Andy Warhol</a>
+                <a href="" class="dropdown-item">Roy Lichtenstein</a>
+                <a href="" class="dropdown-item">David Hockney</a>
+                <a href="" class="dropdown-item">Takashi Murakami</a>
+                <a href="" class="dropdown-item">Banksy</a>
+                <a href="" class="dropdown-item">Liu Wei</a>
+                <a href="" class="dropdown-item">Basquiat</a>
+                <a href="" class="dropdown-item">Yayoi Kasuma</a>
             </div>
         </li>
 
@@ -29,21 +34,16 @@
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="design-link">
                 <a href="" class="dropdown-item">Pop Art</a>
-                <a href="" class="dropdown-item">Abstract</a>
-                <a href="" class="dropdown-item">Graffiti</a>
+                <a href="" class="dropdown-item">Abstract Art</a>
+                <a href="" class="dropdown-item">Graffiti Art</a>
+                <a href="" class="dropdown-item">Contemporary Art</a>
             </div>
         </li>
 
-        <li class="nav-item dropdown">
-            <a class="logo-font font-weight-bold nav-link text-black" href="#" id="inspirations-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Special Offers
+        <li class="nav-item">
+            <a class="logo-font font-weight-bold nav-link text-black" href="#" id="inspirations-link" aria-haspopup="true" aria-expanded="false">
+                Inspirations
             </a>
-            <div class="dropdown-menu border-0" aria-labelledby="inspirations-link">
-                <a href="" class="dropdown-item">New Arrivals</a>
-                <a href="" class="dropdown-item">Deals</a>
-                <a href="" class="dropdown-item">Clearance</a>
-                <a href="" class="dropdown-item">All Specials</a>
-            </div>
         </li>
     </ul>
 </div>
