@@ -61,6 +61,12 @@ i .search-icon {
     color: white;
 }
 
+.btn-outline-black {
+    background: white;
+    color: black !important;
+    border: 1px solid black;
+}
+
 /* Custom black text class */
 .text-black {
     color: #000 !important;
@@ -98,6 +104,11 @@ i .search-icon {
     width: 100%;
     height: 25vw;
     object-fit: cover;
+}
+
+.img-container {
+    max-width: 100%;
+    height: auto;
 }
 
 /* -------------------------------- Media Queries */

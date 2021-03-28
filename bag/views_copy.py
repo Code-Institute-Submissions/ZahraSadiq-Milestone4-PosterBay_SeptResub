@@ -4,7 +4,7 @@ from django.shortcuts import render, redirect
 
 
 def view_bag(request):
-    """ A view that renders the bag contents page """
+    """ A view which renders bag contents page """
 
     return render(request, 'bag/bag.html')
 
@@ -12,7 +12,7 @@ def view_bag(request):
 def add_to_bag(request, item_id):
     """ Add a quantity of the specified product to the shopping bag """
 
-    quantity = int(request.POST.get('quantity', 0))
+    quantity = int(request.POST.get('quantity'))
     redirect_url = request.POST.get('redirect_url')
     """ Store the bag items in a session or create a new one """
     bag = request.session.get('bag', {})
