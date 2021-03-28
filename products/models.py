@@ -28,6 +28,7 @@ class Product(models.Model):
     description = models.TextField()
     side_note = models.TextField()
     artist = models.CharField(max_length=250)
+    artist_id = models.CharField(max_length=100, null=True, blank=True)
     price = models.DecimalField(max_digits=6, decimal_places=2)
     image_url = models.URLField(
         max_length=2000, null=True, blank=True)
