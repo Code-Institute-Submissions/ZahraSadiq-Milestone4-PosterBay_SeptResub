@@ -12,7 +12,8 @@ def view_bag(request):
 def add_to_bag(request, item_id):
     """ Add a quantity of the specified product to the shopping bag """
 
-    quantity = int(request.POST.get('quantity', 0))
+    print(request.POST.get('quantity'))
+    quantity = int(request.POST.get('quantity'))
     redirect_url = request.POST.get('redirect_url')
     """ Store the bag items in a session or create a new one """
     bag = request.session.get('bag', {})
@@ -25,5 +26,4 @@ def add_to_bag(request, item_id):
 
     """ Puts the bag variable into a session """
     request.session['bag'] = bag
-    print(request.session['bag'])
     return redirect(redirect_url)
