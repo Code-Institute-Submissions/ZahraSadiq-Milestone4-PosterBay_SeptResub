@@ -67,6 +67,10 @@ i .search-icon {
     border: 1px solid black;
 }
 
+.update-link {
+    cursor: pointer;
+}
+
 /* Custom black text class */
 .text-black {
     color: #000 !important;
