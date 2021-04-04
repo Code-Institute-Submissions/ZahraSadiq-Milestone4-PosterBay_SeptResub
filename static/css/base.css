@@ -67,7 +67,8 @@ i .search-icon {
     border: 1px solid black;
 }
 
-.update-link {
+.update-link,
+.remove-item {
     cursor: pointer;
 }
 
