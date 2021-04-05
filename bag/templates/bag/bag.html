@@ -32,7 +32,7 @@
                             <th scope="col">Subtotal</th>
                         </tr>
                     </thead>
-
+                    <!-- Product Details of Item in Bag -->
                     {% for item in bag_items %}
                     <tr>
                         <td>
@@ -46,6 +46,7 @@
                             <p class="my-0">${{ item.product.price }}</p>
                         </td>
                         <td class="py-3 w-25">
+                            <!-- Update Qty in Bag -->
                             <form class="form update-form" method="POST" action="{% url 'adjust_bag' item.item_id %}">
                                 {% csrf_token %}
                                 <div class="form-group">
@@ -71,6 +72,7 @@
                                     </div>
                                 </div>
                             </form>
+                            <!-- Update & Remove Items in Bag Links -->
                             <a class="update-link text-info"><small>Update</small></a>
                             <a class="remove-item text-danger float-right" id="remove_{{ item.item_id }}"><small>Remove</small></a>
                         </td>
@@ -80,6 +82,7 @@
                     </tr>
                     {% endfor %}
                     <tr>
+                        <!-- Order Amount -->
                         <td colspan="5" class="pt-5 text-right">
                             <h6><strong>Bag Total: ${{ total|floatformat:2 }}</strong></h6>
                             <h6>Delivery: ${{ delivery|floatformat:2 }}</h6>
@@ -92,6 +95,7 @@
                         </td>
                     </tr>
                     <tr>
+                        <!-- Keep Shopping Button -->
                         <td colspan="5" class="pt-5 text-right">
                             <a href="{% url 'products' %}" class="btn btn-outline-black btn-lg">
                                 <span class="icon">
@@ -99,7 +103,8 @@
                                 </span>
                                 <span>Keep Shopping</span>
                             </a>
-                            <a href="" class="btn btn-black btn-lg">
+                            <!-- Secure Checkout Button -->
+                            <a href="{% url 'checkout' %}" class="btn btn-black btn-lg">
                                 <span>Secure Checkout</span>
                                 <span class="icon">
                                     <i class="fas fa-lock"></i>
@@ -109,6 +114,7 @@
                     </tr>
                 </table>
             </div>
+            <!-- If Bag is Empty display this message -->
             {% else %}
             <p class="lead mb-5">Oops looks like your bag is empty!</p>
             <a href="{% url 'products' %}" class="btn btn-outline-black btn-lg">

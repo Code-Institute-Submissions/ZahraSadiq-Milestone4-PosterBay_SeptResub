@@ -10,6 +10,7 @@ class OrderForm(forms.ModelForm):
             'country', 'postcode', 'city', 'streetaddress',
             'house_number',)
 
+
 def __init__(self, *args, **kwargs):
     """
     Add placeholders and classes and remove auto-generated
@@ -34,7 +35,7 @@ def __init__(self, *args, **kwargs):
     self.fields['first_name'].widget.attrs['autofocus'] = True
     for field in self.fields:
         if self.fields[field].required:
-            placeholder = f'{placeholder[field]} *'
+            placeholder = f'{placeholders[field]} *'
         else:
             placeholder = placeholders[field]
         self.fields[field].widget.attrs['placeholder'] = placeholder
