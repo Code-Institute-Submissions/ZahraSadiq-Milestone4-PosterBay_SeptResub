@@ -35,6 +35,7 @@
                 </div>
             </form>
         </div>
+        <!-- Filter by Artist -->
         <div class="col-12 col-lg-8 my-2 py-1 py-lg-0 text-lg-right">
             <div class="dropdown  d-inline-block ">
                 <button class="btn btn-black dropdown-toggle" type="button" id="dropdownMenuButton"
@@ -52,6 +53,7 @@
                     <a href="" class="dropdown-item">Yayoi Kasuma</a>
                 </div>
             </div>
+            <!-- Filter by Design -->
             <div class="dropdown  d-inline-block ">
                 <button class="btn btn-black dropdown-toggle" type="button" id="dropdownMenuButton"
                     data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -66,7 +68,7 @@
             </div>
         </div>
     </div>
-
+    <!-- All Product Cards -->
     <div class="row">
         <div class="col-10 product-container offset-1">
             <div class="row mt-5 mb-2"></div>
@@ -84,14 +86,17 @@
                                 alt="{{ product.name }}">
                         </a>
                         {% endif %}
-                        <div class="card-body">
+                        <div class="card-body text-center">
                             <!-- Product Name -->
                             <h5 class="card-title">{{ product.name }}</h5>
                             <!-- Artist -->
                             <p class="card-text">Artist: {{ product.artist }}</p>
                         </div>
-                        <div class="card-footer">
-                            <p class="lead mb-0 text-left font-weight-bold">${{ product.price }}</p>
+                        <div class="card-footer text-center">
+                            <p class="lead mb-2 font-weight-bold">${{ product.price }}</p>
+                            <a href="{% url 'product_detail' product.id %}" class="btn btn-black">
+                                <span>See More</span>
+                            </a>
                         </div>
                     </div>
                 </div>
