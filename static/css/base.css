@@ -57,14 +57,55 @@ i .search-icon {
 .btn-black:hover,
 .btn-black:active,
 .btn-black:focus {
-    background: #222;
-    color: white;
+    background: #fcb70f;
+    color: #fff;
 }
 
 .btn-outline-black {
     background: white;
     color: black !important;
     border: 1px solid black;
+}
+
+.btn-outline-black:hover,
+.btn-outline-black:active,
+.btn-outline-black:focus {
+    background: white;
+    color: #fcb70f !important;
+    border: 1px solid #fcb70f;
+}
+
+/* Hover Effect from W3 Schools */
+.btn-see-more {
+    background: black;
+    color: white;
+    transition: all 50s;
+    cursor: pointer;
+}
+
+.btn-see-more span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.btn-see-more span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.btn-see-more:hover span {
+  padding-right: 25px;
+}
+
+.btn-see-more:hover span:after {
+  opacity: 1;
+  right: 0;
 }
 
 .update-link,
