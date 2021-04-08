@@ -84,7 +84,7 @@ form.addEventListener('submit', function(ev) {
                 phone: $.trim(form.phone_number.value),
                 address: {
                     line1: $.trim(form.streetaddress.value),
-                    house_number: $.trim(form.house_number.value),
+                    line2: $.trim(form.house_number.value),
                     city: $.trim(form.city.value),
                     country: $.trim(form.country.value),
                 }
