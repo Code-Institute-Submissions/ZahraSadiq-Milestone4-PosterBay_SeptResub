@@ -320,3 +320,7 @@ input[name='q']::placeholder {
         height: calc(100vh - 116px);
     }
 }
+
+.footer-container {
+    
+}
