@@ -2,7 +2,7 @@
 {% load static %}
 
 {% block extra_css %}
-    <link rel="stylesheet" href="{% static 'checkout/css/checkout.css' %}">
+<link rel="stylesheet" href="{% static 'checkout/css/checkout.css' %}">
 {% endblock %}
 
 {% block page_header %}
@@ -19,7 +19,7 @@
     <div class="row">
         <div class="col">
             <h2 class="mt-2">Thank You <strong>{{ order.first_name }}</strong>!</h2>
-            <p class="text-black">Review your order information below. 
+            <p class="text-black">Review your order information below.
                 A confirmation email will be sent to {{ order.email }}</p>
         </div>
     </div>
@@ -66,7 +66,7 @@
                     </div>
                 </div>
                 {% endfor %}
-                
+
                 <div class="row">
                     <div class="col my-2">
                         <h5>Shipping to:</h5>
@@ -131,7 +131,7 @@
                         <p class="small">{{ order.phone_number }}</p>
                     </div>
                 </div>
-        
+
                 <div class="row">
                     <div class="col my-2">
                         <h5>Billing Info:</h5>
@@ -164,6 +164,19 @@
             </div>
         </div>
     </div>
+</div>
+<div class="row">
+    <div class="col-12 col-lg-7 text-right">
+        {% if from_profile %}
+        <a href="{% url 'profile' %}" class="btn btn-black my-2">
+            <span class="icon mr-2">
+                <i class="fas fa-angle-left"></i>
+            </span>
+            <span class="text-uppercase">Back to Profile</span>
+        </a>
+        {% endif %}
+    </div>
+</div>
 </div>
 
 {% endblock %}
