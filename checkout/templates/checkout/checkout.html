@@ -87,11 +87,11 @@
                 <!-- Shipping Details Section -->
                 <fieldset class="px-3 mb-5">
                     <legend class="fieldset-label text-black px-2 w-auto">Shipping Details:</legend>
-                    {{ order_form.country | as_crispy_field }}
-                    {{ order_form.postcode | as_crispy_field }}
                     {{ order_form.streetaddress | as_crispy_field }}
                     {{ order_form.house_number | as_crispy_field }}
                     {{ order_form.city | as_crispy_field }}
+                    {{ order_form.postcode | as_crispy_field }}
+                    {{ order_form.country | as_crispy_field }}
                     <!-- Save Your Info To Your Account -->
                     <div class="form-check form-check-inline float-right mr-0">
                         {% if user.is_authenticated %}
