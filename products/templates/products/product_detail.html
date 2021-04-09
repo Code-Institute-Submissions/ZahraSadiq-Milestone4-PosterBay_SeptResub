@@ -61,16 +61,11 @@
                                 </div>
                             </div>
                         </div>
-                        <!-- Button back to shop --> 
-                        {% if request.user.is_authenticated %}
-                            <div class="col-12">
-                                <a href="{% url 'wishlist' %}" class="my-1">
-                                    <span class="icon">
-                                        <i class="fas fa-heart"></i>
-                                    </span>
-                                    <span>Add to My Wishlist</span>    
-                                </a>
-                            </div>
+                        {% if request.user.is_superuser %}
+                            <small class="ml-3 text-center">
+                                <a href="{% url 'edit_product' product.id %}">Edit</a> | 
+                                <a class="text-danger" href="{% url 'delete_product' product.id %}">Delete</a>
+                            </small>
                         {% endif %}
                         <!-- Button back to shop -->
                         <div class="col-12">
