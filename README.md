@@ -52,12 +52,10 @@ This website is for anyone interested in buying high-quality art prints from ico
 
 ### 5. Shopper Goals
 
-* As a Shopper, I want to be able to View a list of products so that I can Identify the price, description, product rating, product image and available size
+* As a Shopper, I want to be able to View a list of products so that I can Identify the price, description, and product image
 * As a Shopper, I want to be able to View individual product details so that I can make an informed decision about the product 
 * As a Shopper, I want to be able to Easily view the total of my purchases at any time so that I can Stay within my allocated budget 
-* As a Shopper, I want to be able to Sort the list of available products so that I can Identify the best priced and categorically sorted products 
-* As a Shopper, I want to be able to Sort a specific category of products so that I can find the best-priced  in a specific category or sort the products in the category by artist ad design 
-* As a Shopper, I want to be able to Sort multiple categories of products simultaneously so that I can Find the best-priced products across categories i.e. design or artist
+* As a Shopper, I want to be able to Sort the list of available products so that I can Identify the prints based on a specific artist or design 
 * As a Shopper, I want to be able to Search for a product by name or description so that I can quickly Find a specific product I'd like to purchase
 * As a Shopper, I want to be able to Easily see what I've searched for and the number of results so that i can Quickly decide whether the product I want is available 
 * As a Shopper, I want to be able to Easily select the quantity of the a product when purchasing it so that I can Ensure I dont select the wrong quantity 
@@ -186,39 +184,66 @@ This website is saved in a repository on GitHub.
    * The website is designed to be very clean and straight to the point. The navigation bar enables the user to visit different pages on the website with ease. CTA buttons also link to relevant content, pages & functions.
 * As a First Time Visitor, I want to be able to register my profile.
    * The user is able to register via the navigation bar. If they accidentally click on Login, a link at the bottom of the form also redirects the user to the register page.
-* As a First Time Visitor, I want to be able to gather key information about each recipe to be able to create the desired recipe at home.
-   * All recipe cards contain a button leading the recipe page, where the recipe is presented to the user in great detail.
-* As a First Time Visitor, I want to be able to add a new recipe with ease.
-   * Once the user registers their profile, they are able to navigate to the Add a Recipe page via the navigation bar.
-* As a First Time Visitor, I want to be able to access, edit or delete my created recipe.
-   * Once the user has registered & created a recipe, they are able to view the recipes they added on their profile page (accessible via the navbar). Each recipe card created by them, includes an edit & delete button allowing them to update the recipe or delete it.
-* As a First Time Visitor, I want to be able to visit their social media pages to determine how big a following the company has & how trusted it is.
-   * In the footer, social media icons lead to the company's social media pages.
+* As a First Time Visitor, I want to be able to access my profile once registered.
+   * The user is able to access their profile via the navigation bar.
+* As a First Time Visitor, I want to be able to receive an email confirmation after I register 
+   * After registering, the user is redirected to an email verification page which triggers an email to the registered email with the link to verify their email and login. 
 
 ### B. Returning Visitor Goals
 
 * As a Returning Visitor, I want to be able to log in to my profile with the credentials that were registered.
    * Users can login easily via the navigation bar with their credentials.
 * As a Returning Visitor, I want to be able to log out of my profile.
-   * Once in session, users can log out of the website via a link in the navbar. This will lead back to the login form in case they want to log back in.
-* As a Returning Visitor, I want to be able to get a variety of new recipe options.
-   * Via the homepage, the section “Recently Added Recipes” allows the user to quickly see if new recipes have been added since the last time they visited the website.
-   * The user can also check “All Recipes” page to see all the recipes.
-* As a Returning Visitor, I want to be able to see and access my added recipes.
-   * Once in session, the user can visit their profile page, via the navbar, to see and access their own created recipes.
+   * Once in session, users can log out of the website via a link in the navbar. This will lead to a confirmation sign out page in case they accidentally clicked logout without the intention of logging out. Once confirmed it will lead back to homepage 
+* As a Returning Visitor, I want to be able to get a variety of product options.
+   * Via the navbar, the section “Shop” allows the user to scroll through the array of product options 
+* As a Returning Visitor, I want to be able to see and access my order history.
+   * Once in session, the user can visit their profile page, via the navbar, to see and access their order history.
 * As a Returning Visitor, I want to be able to access my profile.
    * Once in session, the user can access their profile via the top navbar.
-* As a Returning Visitor, I want to be able to edit or delete my added recipes.
-   * Once the user has logged in, they are able to view the recipes they added on their profile page (accessible via the navbar). Each recipe card created by them, includes an edit & delete button allowing them to update the recipe or delete it.
-* As a Returning Visitor, I want to be able to to get in touch with the company with any questions or suggestions I may have.
-   * In the footer, the user can find the email address of the company to get in touch with suggestions or questions.
+* As a Returning Visitor, I want to be able to easily recover my password in case I forget it 
+  * Upon clicking on login, the user will come to the login page which will have a link to recover password if forgotten and reset it 
+* As a Returning Visitor, I want to be able to to get in touch with the company for support when needed
+   * Users searching for support can look to the footer for the company’s contact details 
 
 ### C. Frequent Visitor Goals
 
-* As a Frequent Visitor, I want to check to see if there are any newly added recipes that have been created on the website that I can cook.
-   * At this point the user is familiar with the layout of the website & can recognize new recipes that have been added.
+* As a Frequent Visitor, I want to check to see if there are any newly added products that have been added on the website.
+   * At this point the user is familiar with the layout of the website & can recognize new products that have been added.
 * As a Frequent Visitor, I want to be able to log in & log out of my profile with ease.
    * The user is also familiar with the placement of the login and logout buttons located in the top navbar.
+
+### D. Shopper Goals 
+
+* As a Shopper, I want to be able to View a list of products so that I can Identify the price, description, and product image
+   * All products are displayed clearly on the Shop page 
+* As a Shopper, I want to be able to View individual product details so that I can make an informed decision about the product 
+   * All product cards contain a button leading the product details page, where the product is presented to the user in great detail.
+* As a Shopper, I want to be able to Easily view the total of my purchases at any time so that I can Stay within my allocated budget 
+   * Once the shopper adds a product to the cart, the bag in the upper right corner in the navbar will display the total of their order. A notification also shows what’s in their cart and the price. 
+   * A 3rd option for the user is to click on the bag icon in the navbar which will direct them to the cart page where all items will be displayed.
+* As a Shopper, I want to be able to Sort the list of available products so that I can Identify the prints based on a specific artist or design 
+   * Filters located in the Shop page allow the user to choose their desired “filter” from the drop down menus. This will filter the products based on what the user has selected. 
+* As a Shopper, I want to be able to Search for a product by name or description so that I can quickly Find a specific product I'd like to purchase
+   * A search bar located in the Shop page allows the user to search for their desired print by the keyword entered 
+* As a Shopper, I want to be able to Easily see what I've searched for and the number of results so that i can Quickly decide whether the product I want is available 
+   * Based on their query in the search bar on Shop page, the page will be updated with only the products relevant to their search 
+* As a Shopper, I want to be able to Easily select the quantity of the a product when purchasing it so that I can ensure I don’t select the wrong quantity 
+   * In both the product details page and in the cart, users are able to update their quantity easily 
+* As a Shopper, I want to be able to Easily add or remove products from the cart  so that I can Have flexibility in changing my order in the chance that I don't want a specific product or want to add more products to my cart
+   * In the cart, users can remove products from the cart, update their quantity, or even go back to the shop page to add more products to their cart 
+
+### E. Site Admin Goals 
+
+* As a Site Admin, I want to be able to Add an item to my store so that I can keep providing customers with new options 
+   * The Site admin can add items to their store via the product management admin portal in django 
+* As a Site Admin, I want to be able to Edit an item so that I can Easily change product prices, description, image, and other product-related info
+   * The Site admin can edit items to their store via the product management admin portal in django 
+* As a Site Admin, I want to be able to Delete an item so that I can Easily remove an item from my store when its out of stock 
+   * The Site admin can delete items to their store via the product management admin portal in django 
+* As a Site Admin, I want to be able to view and manage all orders so that I can ensure customers are able to checkout smoothly 
+   * The Site admin can access order history via Django admin, where all order history is stored in detail 
+
 
 ### 3. Further Testing
 
