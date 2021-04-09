@@ -122,7 +122,7 @@ The site contains certain features which are not visible or available to unregis
 * **Save Shipping Details Info**
    * The Save Shipping Details Info checkbox is located on the checkout page and can be ticked by users if they want to save their info to their profile. It is only available to users who are logged in.
 * **Product Management**
-   * The product management functionalities are only accessible to the admin of the website, who has to be logged into the website. The admin can access it via the top navbar and upon entry can proceed with adding new products, editing and deleting products. 
+   * The product management functionalities are only accessible to the admin of the website, who has to be logged into the website. The admin can access it via the top navbar and upon entry can proceed with adding new products. They can edit and delete products directly from the shop page and the product details page. 
 
 
 ### Features to implement in the Future
@@ -241,9 +241,9 @@ This website is saved in a repository on GitHub.
 * As a Site Admin, I want to be able to Add an item to my store so that I can keep providing customers with new options 
    * The Site admin can add items to their store via the product management admin page via the top navbar 
 * As a Site Admin, I want to be able to Edit an item so that I can Easily change product prices, description, image, and other product-related info
-   * The Site admin can edit items to their store via the product management admin page via the top navbar 
+   * The Site admin can edit items to their store via the product management admin page via the edit button on the shop page or product details page 
 * As a Site Admin, I want to be able to Delete an item so that I can Easily remove an item from my store when its out of stock 
-   * The Site admin can delete items to their store via the product management admin page via the top navbar 
+   * The Site admin can delete items to their store via the product management admin page via the delete link on the shop page or product details page  
 * As a Site Admin, I want to be able to view and manage all orders so that I can ensure customers are able to checkout smoothly 
    * The Site admin can access order history via Django admin, where all order history is stored in detail 
 
