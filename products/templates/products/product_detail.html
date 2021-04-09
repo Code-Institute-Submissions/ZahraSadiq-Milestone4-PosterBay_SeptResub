@@ -61,6 +61,18 @@
                                 </div>
                             </div>
                         </div>
+                        <!-- Button back to shop --> 
+                        {% if request.user.is_authenticated %}
+                            <div class="col-12">
+                                <a href="{% url 'wishlist' %}" class="my-1">
+                                    <span class="icon">
+                                        <i class="fas fa-heart"></i>
+                                    </span>
+                                    <span>Add to My Wishlist</span>    
+                                </a>
+                            </div>
+                        {% endif %}
+                        <!-- Button back to shop -->
                         <div class="col-12">
                             <a href="{% url 'products' %}" class="btn btn-outline-black mt-5">
                                 <span class="icon">
@@ -68,6 +80,7 @@
                                 </span>
                                 <span>Keep Shopping </span>
                             </a>
+                            <!-- Button add to cart -->
                             <input type="submit" class="btn btn-black mt-5" value="Add to Bag">
                         </div>
                         <input type="hidden" name="redirect_url" value="{{ request.path }}">
