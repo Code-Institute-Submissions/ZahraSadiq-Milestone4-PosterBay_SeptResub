@@ -96,7 +96,7 @@ I opted for a clean & minimalistic but modern look & feel for this website. The 
 
 The site contains certain features which are not visible or available to unregistered/logged out users. 
 ### Features visible to All Users:
-* *Shop All Products**
+* **Shop All Products**
    * * The Shop page contains an assortment of products sold by Poster Bay. Each product card displays an image of the item, the name, artist name, price and a CTA button to view the product. This page also contains a search bar and filters to allow users to quickly find a product based on search query, artist or design.
 * **Register**
    * The register feature is one visible to all users as a link on the navigation bar. Once clicked, it leads to a form where users can create a unique username and password. If the username is already taken, an error message will flash indicating to the user they should login or use a different email. Once the user has registered successfully, they will be redirected to the homepage. A success message also flashes at the top of the page signalling a successful registration.
@@ -104,12 +104,12 @@ The site contains certain features which are not visible or available to unregis
    * The login feature is also visible to all users and can be found in the navigation bar. It enables users who already have a profile to login with their credentials. If the credentials don't match those entered during registration, an error message “Incorrect Username and/or Password” will flash across the screen. For users who have not registered yet, a CTA link at the bottom of the form directs them to register. Alternatively, if the login is successful and the username & password match those stored in the database, a welcome message will flash & the user will be redirected to the homepage.
 * **Product Details Page**
    * The product details page retrieves information about the item including artist, short product description, and price. The user can also update the quantity here. Buttons at the bottom allow users to add the product to the cart or keep shopping. 
-*** Cart Page ***
+* **Cart Page**
    * Users can access the cart via the top navbar. If they have products, these will be displayed here, if not a message will appear telling them their cart is empty and direct them to the shop page. If there are products, users can update the quantity or even remove the products from their cart. Each time an action is taken a notification message gives them feedback. 
-*** Toast Messages ***
+* **Toast Messages**
    * Bootstrap toasts have been added to give users feedback whenever an action is taken such as adding products to cart, removing them, logging in, checking out and so on. These messages appear on the upper right hand of the screen. 
    * A special toast was added for adding items to the cart, as it displays the items added and allows users to go directly to the checkout.
-*** Checkout Page ***
+* **Checkout Page**
    * The order checkout page is where users go to from the cart page. Here they can fill out the form with all shipping details and make their payment. They are also able to see the contents of their bag displayed. If the user is not logged in, they will see under the form options to register or login to be able to save their details for the next time they make a purchase. 
 * **Footer**
    * Located at the bottom of each page of the website, the footer consists of a contact us section with an email address, a short about section, and social media links leading to art accounts intended to give users more inspirations of where to put up posters.
@@ -127,7 +127,7 @@ The site contains certain features which are not visible or available to unregis
 ### Features to implement in the Future
 
 * Functionality to let users save items to their wishlist 
-* Function to allow user to comment under each product 
+* Function to allow user to comment under each product and leave their review 
 
 ---
 <span id="technologies"></span>
