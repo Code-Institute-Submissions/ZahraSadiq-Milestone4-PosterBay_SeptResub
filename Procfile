@@ -1,1 +1,1 @@
-web: gunicorn posterbay.wsgi:application
+web: gunicorn poster_bay.wsgi:application
