@@ -310,13 +310,13 @@ Forking the GitHub Repository creates a copy of the original repository in our G
 3. Click this to create a copy of the original repository in your GitHub account.
 
 ### Live Site
-* This website is stored in a repository on [Github](https://github.com/ZahraSadiq/Milestone2-AntwerpHotSpots.git)
+* This website is stored in a repository on [Github](https://github.com/ZahraSadiq/Milestone4-PosterBay.git)
   * It was developed on GitPod, with changes regularly pushed to GitHub's repository using one main master branch.
   * Both the deployed and developed versions of this website are identical.
 
 This site is hosted on Heroku.
-* You can view the live site [here](https://house-of-masala.herokuapp.com/)
-* The url for the site is: https://house-of-masala.herokuapp.com/
+* You can view the live site [here](https://posterbay.herokuapp.com/)
+* The url for the site is: https://posterbay.herokuapp.com/
 
 ---
 <span id="credits"></span>
