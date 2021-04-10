@@ -118,7 +118,7 @@ input[name='q']::placeholder {
     color: #aab7c4;
 }
 
-/* Custom black text class */
+/* Custom black text class from Code Institute */
 .text-black {
     color: #000 !important;
 }
@@ -145,6 +145,14 @@ input[name='q']::placeholder {
     z-index: -1;
 }
 
+/* Checkout Form */
+
+#payment-form .form-control,
+#card-element {
+    color: #000;
+    border: 1px solid #000;
+}
+
 /* Headings */
 .banner-text {
     color: #000;
@@ -162,7 +170,7 @@ input[name='q']::placeholder {
     height: auto;
 }
 
-/* Bootstrap Message Toasts - copied from Code Institute */
+/* Bootstrap Message Toasts - from Code Institute */
 .message-container {
     position: fixed;
     top: 72px;
@@ -319,8 +327,4 @@ input[name='q']::placeholder {
     .body {
         height: calc(100vh - 116px);
     }
-}
-
-.footer-container {
-    
 }

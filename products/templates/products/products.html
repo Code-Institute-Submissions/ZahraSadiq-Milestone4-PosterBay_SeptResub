@@ -98,6 +98,7 @@
                                 <span>See More</span>
                             </a>
                         </div>
+                        <!-- Only display update/delete links if user is superuser -->
                         {% if request.user.is_superuser %}
                             <small class="ml-3 text-center">
                                 <a href="{% url 'edit_product' product.id %}">Edit</a> | 
