@@ -36,10 +36,6 @@ i .search-icon {
     color: white;
 }
 
-.logo-font {
-    text-transform: uppercase;
-}
-
 .main-logo-link {
     width: fit-content;
 }
@@ -138,6 +134,26 @@ input[name='q']::placeholder {
 
 .bg-black {
     background: #000 !important;
+}
+
+/* Nav Links */
+
+#home-link,
+#shop-all-link,
+#user-options,
+#shopping-bag {
+    color: #000;
+}
+
+#home-link:hover,
+#shop-all-link:hover {
+    color: #fcb70f;
+    text-decoration: underline;
+}
+
+#user-options:hover,
+#shopping-bag:hover {
+    color: #fcb70f;
 }
 
 .overlay {
@@ -302,7 +318,7 @@ input[name='q']::placeholder {
 }
 
 .allauth-form-inner-content a {
-	color: #17a2b8; /* text-info */
+	color: #fb8aa4; /* text-info */
 }
 
 /* fixed top navbar only on medium and up */
