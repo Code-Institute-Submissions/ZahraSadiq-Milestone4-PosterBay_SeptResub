@@ -43,7 +43,7 @@
                     Shop By Artist
                 </button>
                 <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                    <a href="" class="dropdown-item">Andy Warhol</a>
+                    <a href="{% url 'products' %}?product=pop_art" class="dropdown-item">Andy Warhol</a>
                     <a href="" class="dropdown-item">Roy Lichtenstein</a>
                     <a href="" class="dropdown-item">David Hockney</a>
                     <a href="" class="dropdown-item">Takashi Murakami</a>
@@ -51,6 +51,7 @@
                     <a href="" class="dropdown-item">Liu Wei</a>
                     <a href="" class="dropdown-item">Basquiat</a>
                     <a href="" class="dropdown-item">Yayoi Kasuma</a>
+                    <a href="{% url 'products' %}" class="dropdown-item">Show All</a>
                 </div>
             </div>
             <!-- Filter by Design -->
@@ -60,10 +61,11 @@
                     Shop By Design
                 </button>
                 <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                    <a href="{% url 'products' %}?category=pop_art" class="dropdown-item">Pop Art</a>
-                    <a href="{% url 'products' %}?category=abstract_art" class="dropdown-item">Abstract Art</a>
-                    <a href="{% url 'products' %}?category=graffiti_art" class="dropdown-item">Graffiti Art</a>
-                    <a href="{% url 'products' %}?category=contemporary_art" class="dropdown-item">Contemporary Art</a>
+                    <a href="{% url 'products' %}?categories=pop_art" class="dropdown-item">Pop Art</a>
+                    <a href="{% url 'products' %}?categories=abstract_art" class="dropdown-item">Abstract Art</a>
+                    <a href="{% url 'products' %}?categories=graffiti_art" class="dropdown-item">Graffiti Art</a>
+                    <a href="{% url 'products' %}?categories=contemporary_art" class="dropdown-item">Contemporary Art</a>
+                    <a href="{% url 'products' %}" class="dropdown-item">Show All</a>
                 </div>
             </div>
         </div>
