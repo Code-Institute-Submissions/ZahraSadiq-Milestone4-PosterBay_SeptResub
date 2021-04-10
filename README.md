@@ -86,7 +86,7 @@ I opted for a clean & minimalistic but modern look & feel for this website. The 
 
 ### Wireframes & Mockups:
 
-* View website wireframes for desktop & mobile [here](https://drive.google.com/file/d/1I_eR45ittdz8OyTWI3xFV8nl4pDpnovN/view?usp=sharing)
+* View website wireframes for desktop & mobile [here](https://drive.google.com/file/d/1GzmAOiWqunlDgi_0Jh5v8j8NCXKM2FGK/view?usp=sharing)
 ---
 
 <span id="features"></span>
