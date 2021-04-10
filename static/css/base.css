@@ -10,12 +10,17 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
+/* Headings */
 h1,
 h2,
 h3,
 h4,
 h5 {
     font-family: 'Inconsolata', sans-serif;
+}
+
+.banner-text {
+    color: #000;
 }
 
 /* from Bulma */
@@ -145,19 +150,6 @@ input[name='q']::placeholder {
     z-index: -1;
 }
 
-/* Checkout Form */
-
-#payment-form .form-control,
-#card-element {
-    color: #000;
-    border: 1px solid #000;
-}
-
-/* Headings */
-.banner-text {
-    color: #000;
-}
-
 /* Product Cards */
 .card-img-top {
     width: 100%;
@@ -239,6 +231,14 @@ input[name='q']::placeholder {
 
 .bg-delivery-message {
     background-color: #fb8aa4;
+}
+
+/* Checkout Form */
+
+#payment-form .form-control,
+#card-element {
+    color: #000;
+    border: 1px solid #000;
 }
 
 /* -------------------------------- Media Queries */
