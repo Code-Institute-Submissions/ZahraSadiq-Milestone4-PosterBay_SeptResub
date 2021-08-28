@@ -83,6 +83,70 @@
                 </form>
             </div>
         </div>
+
+        <!-- Product Reviews from YT tutorial -->
+        <hr>
+        <div>
+            <h2 class="mx-4">Customer Reviews</h2>
+            <div class="reviews-wrapper mx-4 my-2">
+                {% for review in product.reviews.all %}
+                    <div class="notification">
+                        <p>
+                            <strong>Date: </strong>{{ review.date_added|date:"d-m-Y"}}<br>
+                            <strong>Stars: </strong>{{ review.stars}}<br>
+                            <strong>{{ request.user }}</strong><br>
+                        </p>
+                        {{ review.content }}<br><br>
+                    </div>
+                <!-- If no reviews have been added show message -->    
+                {% empty %}
+                    <div class="notification">
+                        No reviews yet!
+                    </div>
+                {% endfor %}
+            </div>
+            <br><br>
+            <!-- If user is signed in, allow them to add a review --> 
+            <div class="notification">
+                {% if request.user.is_authenticated %}
+                    <form method="POST" action=".">
+                        {% csrf_token %}
+
+                        <div class="field">
+                            <label>Stars</label>
+
+                            <div class="control">
+                                <div class="select">
+                                    <select name="stars">
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3" selected>3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <label>Your Review</label>
+
+                            <div class="control">
+                                <textarea class="textarea" name="content"></textarea>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <div class="control">
+                                <button class="button is-success">Submit Review</button>
+                            </div>
+                        </div>
+                    </form>
+                {% else %}
+                    <p class="mx-4">Please sign it to add your review!</p>
+                {% endif %}
+            </div>
+            <br><br>
+        </div>
+        
     </div>
 
 </div>
