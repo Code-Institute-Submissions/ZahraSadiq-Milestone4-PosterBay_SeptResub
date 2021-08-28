@@ -41,9 +41,12 @@ class Product(models.Model):
 
     # Add Rating from Reviews to Product Description
     def get_rating(self):
-        total= sum(int(review['stars']) for review in self.reviews.values())
+        total = sum(int(review['stars']) for review in self.reviews.values())
 
-        return total / self.reviews.count()
+        if self.reviews.count() > 0:
+            return total / self.reviews.count()
+        else:
+            return 0
 
 
 # Product Review from YT video
