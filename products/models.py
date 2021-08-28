@@ -39,6 +39,12 @@ class Product(models.Model):
     def __str__(self):
         return self.name
 
+    # Add Rating from Reviews to Product Description
+    def get_rating(self):
+        total= sum(int(review['stars']) for review in self.reviews.values())
+
+        return total / self.reviews.count()
+
 
 # Product Review from YT video
 class ProductReview(models.Model):
