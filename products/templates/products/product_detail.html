@@ -29,10 +29,11 @@
             <div class="product-details-container mb-5 mt-md-5 mt-5">
                 <h3 class="mb-1">{{ product.name }}</h3>
                 <p class="mb-0">Artist: {{ product.artist }}</p>
+                <!-- If there is a rating the avg will be shown. If not display Message -->
                 <p class="lead mb-0 text-left"><strong>€{{ product.price }}, 
-                    Stars: {% if product.get_rating == 0 %}No ratings yet!
+                    {% if product.get_rating == 0 %} <small><em>No ratings yet! </em><i class="fas fa-star"></i></small>
                     {% else %}
-                        {{ product.get_rating|floatformat:1 }}
+                        {{ product.get_rating|floatformat:1 }} <i class="fas fa-star"></i>
                     {% endif %}
                 </strong></p>
                 <p class="mt-3 mb-0">{{ product.description }}</p>
