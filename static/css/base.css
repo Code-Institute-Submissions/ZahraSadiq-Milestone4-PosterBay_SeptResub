@@ -262,6 +262,10 @@ input[name='q']::placeholder {
     margin: 5px 4px 0px 25px;
 }
 
+.review-notification {
+    color: red;
+}
+
 /* Footer */
 
 .footer-wrapper{
