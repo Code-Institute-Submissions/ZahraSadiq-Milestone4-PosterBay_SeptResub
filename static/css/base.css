@@ -266,6 +266,17 @@ input[name='q']::placeholder {
     color: red;
 }
 
+/* Wishlist link */
+
+.wishlist-link {
+    color: #fcb70f;
+}
+
+.wishlist-link:hover {
+    color: #fcb70f;
+    text-decoration: underline;
+}
+
 /* Footer */
 
 .footer-wrapper{

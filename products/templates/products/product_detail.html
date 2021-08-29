@@ -72,6 +72,14 @@
                                 <a href="{% url 'edit_product' product.id %}">Edit</a> | 
                                 <a class="text-danger" href="{% url 'delete_product' product.id %}">Delete</a>
                             </small>
+                            <br><br>
+                        {% endif %}
+                        <!-- If user is signed in show the Add to Wishlist link -->
+                        {% if request.user.is_authenticated %}
+                            <div class="col-12">
+                                <!-- Link add to wishlist -->
+                                <a href="" class="my-5 wishlist-link">Add to Wish List <i class="far fa-heart"></i></a>
+                            </div>
                         {% endif %}
                         <!-- Button back to shop -->
                         <div class="col-12">
@@ -90,7 +98,7 @@
             </div>
         </div>
 
-        <!-- Product Reviews from YT tutorial -->
+        <!-- Customer Reviews from YT tutorial -->
         <hr>
         <div>
             <h2 class="mx-4">Customer Reviews</h2>
