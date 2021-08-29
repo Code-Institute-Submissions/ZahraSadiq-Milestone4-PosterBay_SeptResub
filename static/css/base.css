@@ -257,6 +257,11 @@ input[name='q']::placeholder {
     border: 1px solid #000;
 }
 
+/* Product Review section */
+.reviews-wrapper {
+    margin: 5px 4px 0px 25px;
+}
+
 /* Footer */
 
 .footer-wrapper{

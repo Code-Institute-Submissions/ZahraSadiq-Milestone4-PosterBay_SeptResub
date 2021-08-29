@@ -94,33 +94,34 @@
         <hr>
         <div>
             <h2 class="mx-4">Customer Reviews</h2>
-            <div class="reviews-wrapper mx-4 my-2">
+            <div>
                 {% for review in product.reviews.all %}
-                    <div class="notification">
+                    <div class="reviews-wrapper">
                         <p>
                             <strong>Date: </strong>{{ review.date_added|date:"d-m-Y"}}<br>
-                            <strong>Stars: </strong>{{ review.stars}}<br>
+                            <strong>Stars: </strong>{{ review.stars}} <i class="fas fa-star"></i><br>
                             <strong>{{ request.user }}</strong><br>
                         </p>
                         {{ review.content }}<br><br>
                     </div>
                 <!-- If no reviews have been added show message -->    
                 {% empty %}
-                    <div class="notification">
+                    <div class="reviews-wrapper">
                         No reviews yet!
                     </div>
                 {% endfor %}
             </div>
             <br><br>
             <!-- If user is signed in, allow them to add a review --> 
-            <div class="notification">
+            <div class="reviews-wrapper">
                 {% if request.user.is_authenticated %}
+                <hr>
                     <form method="POST" action=".">
                         {% csrf_token %}
-
+                        
+                        <h4>Add Your Product Review Below</h4>
                         <div class="field">
                             <label>Stars</label>
-
                             <div class="control">
                                 <div class="select">
                                     <select name="stars">
@@ -142,7 +143,7 @@
                         </div>
                         <div class="field">
                             <div class="control">
-                                <button class="button is-success">Submit Review</button>
+                                <button class="btn btn-black mt-3">Submit Review</button>
                             </div>
                         </div>
                     </form>
