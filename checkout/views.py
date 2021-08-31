@@ -160,7 +160,7 @@ def checkout_success(request, order_number):
                 user_profile_form.save()
 
     messages.success(request, f'Your order has been placed! \
-        A confirmation email will be sent to {order.email}.')
+    Thanks for shopping at Poster Bay!')
 
     # once order is placed delete session
     if 'bag' in request.session:
