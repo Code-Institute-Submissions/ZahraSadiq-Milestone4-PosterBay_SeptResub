@@ -41,6 +41,13 @@
                         <p class="card-text">{{post.content|slice:":200" }}</p>
                         <a href="{% url 'post_detail' post.slug  %}" class="btn btn-black">Read More &rarr;</a>
                     </div>
+                    <!-- Only display update/delete links if user is superuser -->
+                    {% if request.user.is_superuser %}
+                        <small class="ml-4">
+                            <a href="">Edit</a> | 
+                            <a class="text-danger" href="">Delete</a>
+                        </small>
+                    {% endif %}
                 </div>
                 {% endfor %}
             </div>
