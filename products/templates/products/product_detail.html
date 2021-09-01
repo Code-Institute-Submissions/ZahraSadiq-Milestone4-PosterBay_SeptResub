@@ -74,23 +74,16 @@
                             </small>
                             <br><br>
                         {% endif %}
-                        <!-- If user is signed in show the Add to Wishlist link -->
-                        {% if request.user.is_authenticated %}
-                            <div class="col-12">
-                                <!-- Link add to wishlist -->
-                                <a href="" class="my-5 wishlist-link">Add to Wish List <i class="far fa-heart"></i></a>
-                            </div>
-                        {% endif %}
                         <!-- Button back to shop -->
                         <div class="col-12">
-                            <a href="{% url 'products' %}" class="btn btn-outline-black mt-5">
+                            <a href="{% url 'products' %}" class="btn btn-outline-black mt-3">
                                 <span class="icon">
                                     <i class="fas fa-chevron-left"></i>
                                 </span>
                                 <span>Keep Shopping </span>
                             </a>
                             <!-- Button add to cart -->
-                            <input type="submit" class="btn btn-black mt-5" value="Add to Bag">
+                            <input type="submit" class="btn btn-black mt-3" value="Add to Bag">
                         </div>
                         <input type="hidden" name="redirect_url" value="{{ request.path }}">
                     </div>

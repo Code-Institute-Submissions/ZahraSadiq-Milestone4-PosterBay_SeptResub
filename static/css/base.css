@@ -137,7 +137,6 @@ input[name='q']::placeholder {
 }
 
 /* Nav Links */
-
 #home-link,
 #shop-all-link,
 #blog-link,
@@ -258,7 +257,6 @@ input[name='q']::placeholder {
 }
 
 /* Checkout Form */
-
 #payment-form .form-control,
 #card-element {
     color: #000;
@@ -274,19 +272,7 @@ input[name='q']::placeholder {
     color: red;
 }
 
-/* Wishlist link */
-
-.wishlist-link {
-    color: #fcb70f;
-}
-
-.wishlist-link:hover {
-    color: #fcb70f;
-    text-decoration: underline;
-}
-
 /* Footer */
-
 .footer-wrapper{
     background-color: #000;
     padding-top: 20px;
