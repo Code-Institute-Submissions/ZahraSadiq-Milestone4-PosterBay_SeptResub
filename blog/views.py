@@ -1,6 +1,9 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect, reverse, get_object_or_404
+from django.contrib.auth.decorators import login_required
 from django.views import generic
 from .models import Post 
+from .forms import BlogForm
+
 
 # Create your views here.
 
@@ -14,3 +17,15 @@ class PostList(generic.ListView):
 class PostDetail(generic.DetailView):
     model = Post
     template_name = 'post_detail.html'
+
+
+# CRUD functionalities from Code Institute for Blog Post
+def add_post(request):
+    """ Add a new blog post """
+    form = BlogForm()
+    template = 'blog/add_post.html'
+    context = {
+        'form': form,
+    }
+
+    return render(request, template, context)
