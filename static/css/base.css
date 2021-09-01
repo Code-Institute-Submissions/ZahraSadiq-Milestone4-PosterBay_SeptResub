@@ -140,13 +140,15 @@ input[name='q']::placeholder {
 
 #home-link,
 #shop-all-link,
+#blog-link,
 #user-options,
 #shopping-bag {
     color: #000;
 }
 
 #home-link:hover,
-#shop-all-link:hover {
+#shop-all-link:hover,
+#blog-link:hover {
     color: #fcb70f;
     text-decoration: underline;
 }
@@ -176,6 +178,12 @@ input[name='q']::placeholder {
 .img-container {
     max-width: 100%;
     height: auto;
+}
+
+/* Blog */
+#blog_post_header {
+    color: #f8f9fa;
+    background-color: #000;
 }
 
 /* Bootstrap Message Toasts - from Code Institute */

@@ -15,7 +15,7 @@
 <div class="container-fluid">
     <div class="row">
         <div class="col text-center my-4">
-            <h2>Welcome to the Poster Bay Blog</h2>
+            <h2>What's Trending on Poster Bay?</h2>
         </div>
     </div>
     <div class="container">
@@ -24,11 +24,22 @@
             <div class="col-md-8 mt-3 left">
                 {% for post in post_list %}
                 <div class="card mb-4">
+                    <!-- Blog Post Image Goes Here -->
+                    <figure class="figure">
+                        {% if post.image_url %}
+                            <img src="{{ post.image_url }}" class="figure-img img-fluid rounded"
+                                alt="{{ post.title }}">
+                        {% else %}
+                            <img class="figure-img img-fluid rounded" src="{{ MEDIA_URL }}noimage.jpg"
+                                alt="{{ post.title }}">
+                        {% endif %}
+                    </figure>
+                    <!-- Blog Post Title & Blurb Go Here -->
                     <div class="card-body">
                         <h2 class="card-title">{{ post.title }}</h2>
                         <p class="card-text text-muted h6">{{ post.author }} | {{ post.created_on}} </p>
                         <p class="card-text">{{post.content|slice:":200" }}</p>
-                        <a href="{% url 'post_detail' post.slug  %}" class="btn btn-primary">Read More &rarr;</a>
+                        <a href="{% url 'post_detail' post.slug  %}" class="btn btn-black">Read More &rarr;</a>
                     </div>
                 </div>
                 {% endfor %}
@@ -36,11 +47,11 @@
             <!-- Sidebar Widgets Column from Building a Blog App with Django tutorial -->
             <div class="col-md-4 float-right ">
                 <div class="card my-4">
-                        <h5 class="card-header">About Us</h5>
+                        <h5 class="card-header" id="blog_post_header">Hey There, Welcome!</h5>
                     <div class="card-body">
-                        <p class="card-text"> This awesome blog is made on the top of our Favourite full stack Framework 'Django', follow up the tutorial to learn how we made it..!</p>
-                        <a href="https://djangocentral.com/building-a-blog-application-with-django"
-                        class="btn btn-danger">Know more!</a>
+                        <p class="card-text">Every month we post new blog posts about all things new & old in the art world. Sometimes we'll go back into time & reveal excerpts from the lives of one of our featured artists,
+                            while other times catching you up on what's hot & trending. You can find it all here! <br> <br>So make sure to come back next month to see what's new & in store for you!!
+                        </p>
                     </div>
                 </div>
             </div>
