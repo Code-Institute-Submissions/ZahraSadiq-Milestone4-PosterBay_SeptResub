@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block page_header %}
+<div class="container header-container">
+    <div class="row">
+        <div class="col"></div>
+    </div>
+</div>
+{% endblock %}
+
+{% block content %}
+<!-- To hide the background image -->
+<div class="overlay"></div>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-8 card mb-4  mt-3 left  top">
+          <div class="card-body">
+            <h1>{% block title %} {{ object.title }} {% endblock title %}</h1>
+            <p class=" text-muted">{{ post.author }} | {{ post.created_on }}</p>
+            <p class="card-text ">{{ object.content | safe }}</p>
+          </div>
+        </div>
+        <!-- Sidebar Widgets Column from Building a Blog App with Django tutorial -->
+        <div class="col-md-4 float-right ">
+            <div class="card my-4">
+                    <h5 class="card-header">About Us</h5>
+                <div class="card-body">
+                    <p class="card-text"> This awesome blog is made on the top of our Favourite full stack Framework 'Django', follow up the tutorial to learn how we made it..!</p>
+                    <a href="https://djangocentral.com/building-a-blog-application-with-django"
+                    class="btn btn-danger">Know more!</a>
+                </div>
+            </div>
+        </div>
+      </div>
+    </div>
+</div>
+
+{% endblock %}
