@@ -27,7 +27,7 @@
                     <!-- Blog Post Image Goes Here -->
                     <figure class="figure">
                         {% if post.image_url %}
-                            <img src="{{ post.image_url }}" class="figure-img img-fluid rounded"
+                            <img src="{{ post.image_url }}" class="figure-img img-fluid rounded card-img-top"
                                 alt="{{ post.title }}">
                         {% else %}
                             <img class="figure-img img-fluid rounded" src="{{ MEDIA_URL }}noimage.jpg"
@@ -49,7 +49,7 @@
                 <div class="card my-4">
                         <h5 class="card-header" id="blog_post_header">Hey There, Welcome!</h5>
                     <div class="card-body">
-                        <p class="card-text">Every month we post new blog posts about all things new & old in the art world. Sometimes we'll go back into time & reveal excerpts from the lives of one of our featured artists,
+                        <p class="card-text">Every month we ask our fabulous guest authors to post new blog posts about all things new & old in the art world. Sometimes we'll go back into time & reveal excerpts from the lives of one of our featured artists,
                             while other times catching you up on what's hot & trending. You can find it all here! <br> <br>So make sure to come back next month to see what's new & in store for you!!
                         </p>
                     </div>
