@@ -44,7 +44,7 @@
                     <!-- Only display update/delete links if user is superuser -->
                     {% if request.user.is_superuser %}
                         <small class="ml-4">
-                            <a href="">Edit</a> | 
+                            <a href="{% url 'edit_post' post.id %}">Edit</a> | 
                             <a class="text-danger" href="">Delete</a>
                         </small>
                     {% endif %}

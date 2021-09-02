@@ -33,7 +33,7 @@ def add_post(request):
             messages.success(request,
             f'Yahoo! A new blog post has been uploaded to the database')
 
-            return redirect(reverse('blog'))
+            return redirect(reverse('blog', args=[post.id]))
 
     except Exception as e:
         form = PostForm()
@@ -44,3 +44,30 @@ def add_post(request):
     }
 
     return render(request, template, context)
+
+
+# Edit a blog post on Blog page
+# Help from Master Code Online
+def edit_post(request, pk):
+    post = get_object_or_404(Post, pk=pk)
+
+    if request.method == 'POST':
+        form = PostForm(request.POST, request.FILES, instance=post)
+        if form.is_valid():
+            form.save()
+            messages.success(request, 'You have successfully edited this post!')
+            return redirect(reverse('blog'))
+        else:
+            messages.error(request, 
+                            'Error: Blog post was not saved.')
+    else:
+        form = PostForm(instance=post)
+        
+    template = 'edit_post.html'
+    context = {
+        'form': form,
+        'post': post,
+        }
+
+    return render(request, template, context)
+
