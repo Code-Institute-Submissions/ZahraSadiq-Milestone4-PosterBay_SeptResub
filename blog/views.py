@@ -22,11 +22,16 @@ class PostDetail(generic.DetailView):
 
 # Add a new blog post to Blog page
 # Help from Master Code Online
+@login_required
 def add_post(request):
     """ Add a new blog post """
+    if not request.user.is_superuser:
+        messages.error(request, 'Sorry, only store owners can do that.')
+        return redirect(reverse('blog'))
+
     form = PostForm(request.POST or None)
     template = 'add_post.html'
-    
+
     try:
         if form.is_valid():
             form.save()
@@ -38,7 +43,7 @@ def add_post(request):
     except Exception as e:
         form = PostForm()
         messages.warning(request, 'Blog post was not saved. Error: {}'.format(e))
-
+    
     context = {
         'form': form,
     }
@@ -48,7 +53,13 @@ def add_post(request):
 
 # Edit a blog post on Blog page
 # Help from Master Code Online
+@login_required
 def edit_post(request, pk):
+    """ Edit an existing blog post """
+    if not request.user.is_superuser:
+        messages.error(request, 'Sorry, only store owners can do that.')
+        return redirect(reverse('blog'))
+
     post = get_object_or_404(Post, pk=pk)
 
     if request.method == 'POST':
@@ -73,8 +84,13 @@ def edit_post(request, pk):
 
 
 # Delete a post from the blog page
+@login_required
 def delete_post(request, pk):
-    """ Delete a product from the store """
+    """ Delete a post from the blog """
+    if not request.user.is_superuser:
+        messages.error(request, 'Sorry, only store owners can do that.')
+        return redirect(reverse('blog'))
+
     post = get_object_or_404(Post, pk=pk)
     post.delete()
     messages.success(request, 'Post deleted!')
