@@ -15,7 +15,7 @@
 
 Poster Bay was founded by 1 artsy gal looking to provide other art-loving folks with affordable, high quality prints from some of the world's iconic artists. Each print has been carefully curated & printed on 170gsm Silk paper to be long-lasting.
 
-Through this ecommerce site, customers are able to view a variety of poster prints, purchase them and store their information on the site to make their checkout flow much quicker the next time they visit the website. 
+Through this ecommerce site, customers are able to view a variety of poster prints, purchase them and store their information on the site to make their checkout flow much quicker the next time they visit the website. They are also able to add product reviews & visit the blog page for interesting articles on featured artists on PosterBay.
 
 ---
 
@@ -32,8 +32,9 @@ This website is for anyone interested in buying high-quality art prints from ico
 * As a First Time Visitor, I want to be able to easily navigate throughout the site to find content most relevant to me.
 * As a First Time Visitor, I want to be able to register my profile.
 * As a First Time Visitor, I want to be able to access my profile once registered. 
- As a First Time Visitor, I want to be able to receive an email confirmation after I register 
-
+* As a First Time Visitor, I want to be able to receive an email confirmation after I register.
+* As a First Time Visitor, I want to be able to read through relevant blog articles on the website to learn more about the artists' whose prints I'm purchasing.
+* As a First Time Visitor, I want to be able to see how a product has been rated by other users.
 
 ### 3. Returning Visitor Goals
 
@@ -42,8 +43,10 @@ This website is for anyone interested in buying high-quality art prints from ico
 * As a Returning Visitor, I want to be able to get a variety of product options.
 * As a Returning Visitor, I want to be able to see and access my order history.
 * As a Returning Visitor, I want to be able to access my profile.
-* As a Returning Visitor, I want to be able to easily recover my password in case I forget it 
-* As a Returning Visitor, I want to be able to to get in touch with the company for support when needed
+* As a Returning Visitor, I want to be able to easily recover my password in case I forget it.
+* As a Returning Visitor, I want to be able to get in touch with the company for support when needed.
+* As a Returning Visitor, I want to be able to read new blog articles on the website.
+* As a Returning Visitor, I want to be able to leave reviews under products I've purchased in the past.
 
 ### 4. Frequent User Goals
 
@@ -63,10 +66,13 @@ This website is for anyone interested in buying high-quality art prints from ico
 
 ### 6. Site Admin Goals
 
-* As a Site Admin, I want to be able to Add an item to my store so that I can keep providing customers with new options 
-* As a Site Admin, I want to be able to Edit an item so that I can Easily change product prices, description, image, and other product-related info
-* As a Site Admin, I want to be able to Delete an item so that I can Easily remove an item from my store when its out of stock 
-* As a Site Admin, I want to be able to view and manage all orders so that I can ensure customers are able to checkout smoothly 
+* As a Site Admin, I want to be able to Add an item to my store so that I can keep providing customers with new options.
+* As a Site Admin, I want to be able to Edit an item so that I can Easily change product prices, description, image, and other product-related info.
+* As a Site Admin, I want to be able to Delete an item so that I can Easily remove an item from my store when its out of stock.
+* As a Site Admin, I want to be able to view and manage all orders so that I can ensure customers are able to checkout smoothly.
+* As a Site Admin, I want to be able to Add a new post to my blog so that I can keep providing customers with new information.
+* As a Site Admin, I want to be able to Edit a post so that I can Easily change or update the article with relevant information.
+* As a Site Admin, I want to be able to Delete a blog post so that I can Easily remove an post when it's no longer relevant or the information is outdated.
 
 ### Design:
 
@@ -83,6 +89,7 @@ I opted for a clean & minimalistic but modern look & feel for this website. The 
 * Imagery:
   * A bright, colorful abstract image is used for the hero image to be eye-catching & inviting to the user and stay consistent with the “modern/contemporary” art theme.
 * The artworks for the posters speak for themselves - they are eye-catching, fun, young and really enticing choices to use as posters in one’s home. 
+* The banners for the blogs are also bright and fun to attract users to click on the blog posts and learn more about the artists. 
 
 ### Wireframes & Mockups:
 
@@ -108,7 +115,11 @@ The site contains certain features which are not visible or available to unregis
    * Bootstrap toasts have been added to give users feedback whenever an action is taken such as adding products to cart, removing them, logging in, checking out and so on. These messages appear on the upper right hand of the screen. 
    * A special toast was added for adding items to the cart, as it displays the items added and allows users to go directly to the checkout.
 * **Checkout Page**
-   * The order checkout page is where users go to from the cart page. Here they can fill out the form with all shipping details and make their payment. They are also able to see the contents of their bag displayed. If the user is not logged in, they will see under the form options to register or login to be able to save their details for the next time they make a purchase. 
+   * The order checkout page is where users go to from the cart page. Here they can fill out the form with all shipping details and make their payment. They are also able to see the contents of their bag displayed. If the user is not logged in, they will see under the form options to register or login to be able to save their details for the next time they make a purchase.
+* **Blog Page**
+   * The blog page displays an overview of all published blog posts for readers to scroll through. It also has a sidebar panel with a welcome message to users to tell them more about the blog and how often to come back for new blog posts. 
+* **Blog Post Page**
+   * The blog post page allows readers to read the published posts individually. 
 * **Footer**
    * Located at the bottom of each page of the website, the footer consists of a contact us section with an email address, a short about section, and social media links leading to art accounts intended to give users more inspirations of where to put up posters.
 * **Navbar**
@@ -122,13 +133,17 @@ The site contains certain features which are not visible or available to unregis
 * **Save Shipping Details Info**
    * The Save Shipping Details Info checkbox is located on the checkout page and can be ticked by users if they want to save their info to their profile. It is only available to users who are logged in.
 * **Product Management**
-   * The product management functionalities are only accessible to the admin of the website, who has to be logged into the website. The admin can access it via the top navbar and upon entry can proceed with adding new products. They can edit and delete products directly from the shop page and the product details page. 
+   * The product management functionalities are only accessible to the admin of the website, who has to be logged into the website. The admin can access it via the top navbar and upon entry can proceed with adding new products. They can edit and delete products directly from the shop page and the product details page.
+* **Blog Management**
+   * The blog management functionalities are only accessible to the admin of the website, who has to be logged into the website. The admin can access it via the top navbar and upon entry can proceed with adding a new blog post via a form. They can edit and delete blog posts directly from the blog page.  
 
 
 ### Features to implement in the Future
 
-* Functionality to let users save items to their wishlist 
-* Function to allow user to comment under each product and leave their review 
+* Functionality to let users save items to their wishlist. 
+* Function to allow users to comment on blog posts.
+* Function to allow users to add guest blog posts. 
+* Function to display a list of newly published blog posts on the blog page.
 
 ---
 <span id="technologies"></span>
@@ -191,6 +206,10 @@ This website is saved in a repository on GitHub.
    * The user is able to access their profile via the navigation bar.
 * As a First Time Visitor, I want to be able to receive an email confirmation after I register 
    * After registering, the user is redirected to an email verification page which triggers an email to the registered email with the link to verify their email and login. 
+* As a First Time Visitor, I want to be able to read through relevant blog articles on the website to learn more about the artists' whose prints I'm purchasing.
+   * The user is able to access the blog via the blog link in the top navbar. Once on the blog page, the user is then able to view individual posts by clicking on the "Read More" call-to-action button.
+* As a First Time Visitor, I want to be able to see how a product has been rated by other users.
+   * Users can see product reviews via the product details page. If a product has a review, the ratings will be updated with the average number of stars left by other customers. If a product doesn't have a review yet, there will be a message displayed next to the product price that says "No ratings yet".
 
 ### B. Returning Visitor Goals
 
@@ -208,6 +227,10 @@ This website is saved in a repository on GitHub.
   * Upon clicking on login, the user will come to the login page which will have a link to recover password if forgotten and reset it 
 * As a Returning Visitor, I want to be able to to get in touch with the company for support when needed
    * Users searching for support can look to the footer for the company’s contact details 
+* As a Returning Visitor, I want to be able to read new blog articles on the website.
+   * Users are able to find new blog posts by visiting the blog page via the top navbar & check the page for new posts. Here the date and time of publishing will give the user a good sense of whether its new or old.
+* As a Returning Visitor, I want to be able to leave reviews under products I've purchased in the past.
+   * Users are able to leave product reviews via the Customer Review section under each product in the product details page. Here users can rate the number of stars using the dropdown menu selection and leave a comment in the comment box. 
 
 ### C. Frequent Visitor Goals
 
@@ -245,7 +268,13 @@ This website is saved in a repository on GitHub.
 * As a Site Admin, I want to be able to Delete an item so that I can Easily remove an item from my store when its out of stock 
    * The Site admin can delete items to their store via the product management admin page via the delete link on the shop page or product details page  
 * As a Site Admin, I want to be able to view and manage all orders so that I can ensure customers are able to checkout smoothly 
-   * The Site admin can access order history via Django admin, where all order history is stored in detail 
+   * The Site admin can access order history via Django admin, where all order history is stored in detail
+* As a Site Admin, I want to be able to Add a new post to my blog so that I can keep providing customers with new information.
+   * The Site admin can add new posts to their blog page via the blog management admin page via the top navbar
+* As a Site Admin, I want to be able to Edit a post so that I can Easily change or update the article with relevant information.
+   * The Site admin can edit posts via the edit link on the blog page located right under each post 
+* As a Site Admin, I want to be able to Delete a blog post so that I can Easily remove an post when it's no longer relevant or the information is outdated.
+   * The Site admin can delete posts via the delete link on the blog page located right under each post 
 
 
 ### 3. Further Testing
@@ -325,6 +354,8 @@ This site is hosted on Heroku.
 ### 1. Code Snippets
 
 * The code in this project largely follows The Boutique Ado project by Code institute.
+* The custom Blog model was inspired by Master Code Online tutorials on YouTube and Djangocentral.com
+* The custom User Review model was inspired by Code with Stein tutorial on YouTube
 
 ### 2. Media
 
@@ -353,7 +384,4 @@ This site is hosted on Heroku.
    * [Glowing Pumpkin Print ](https://i.pinimg.com/564x/ac/9e/43/ac9e43ba5777228cf91c70782c5ce020.jpg/)
    * [Fan Work Print ](https://i.pinimg.com/564x/4c/30/b8/4c30b8d70beb9f5fdc47fadfa5426040.jpg)
 
- ### 4. Acknowledgements
-
-* **Oluwafemi Medale (My CI Mentor):** Thanks for your advice and support.
 
