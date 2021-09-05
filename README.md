@@ -102,13 +102,15 @@ I opted for a clean & minimalistic but modern look & feel for this website. The 
 The site contains certain features which are not visible or available to unregistered/logged out users. 
 ### Features visible to All Users:
 * **Shop All Products**
-   * * The Shop page contains an assortment of products sold by Poster Bay. Each product card displays an image of the item, the name, artist name, price and a CTA button to view the product. This page also contains a search bar and filters to allow users to quickly find a product based on search query, artist or design.
+   * * The Shop page contains an assortment of products sold by Poster Bay. Each product card displays an image of the item, the name, artist name, price and a CTA button to view the product. This page also contains a search bar to allow users to quickly find a product based on search query.
 * **Register**
    * The register feature is one visible to all users as a link on the navigation bar. Once clicked, it leads to a form where users can create a unique username and password. If the username is already taken, an error message will flash indicating to the user they should login or use a different email. Once the user has registered successfully, they will be redirected to the homepage. A success message also flashes at the top of the page signalling a successful registration.
 * **Login**
    * The login feature is also visible to all users and can be found in the navigation bar. It enables users who already have a profile to login with their credentials. If the credentials don't match those entered during registration, an error message “Incorrect Username and/or Password” will flash across the screen. For users who have not registered yet, a CTA link at the bottom of the form directs them to register. Alternatively, if the login is successful and the username & password match those stored in the database, a welcome message will flash & the user will be redirected to the homepage.
 * **Product Details Page**
-   * The product details page retrieves information about the item including artist, short product description, and price. The user can also update the quantity here. Buttons at the bottom allow users to add the product to the cart or keep shopping. A product review section allows users to rate the product and leave their comments. Once a review has been left, the product rating which is displayed next to the product price will be updated with the average number of stars left by users. 
+   * The product details page retrieves information about the item including artist, short product description, and price. The user can also update the quantity here. Buttons at the bottom allow users to add the product to the cart or keep shopping. 
+* **Product Reviews**
+   * A product review section on the product details page allows users to rate the product and leave their comments. Once a review has been left, the product rating which is displayed next to the product price will be updated with the average number of stars left by users. 
 * **Cart Page**
    * Users can access the cart via the top navbar. If they have products, these will be displayed here, if not a message will appear telling them their cart is empty and direct them to the shop page. If there are products, users can update the quantity or even remove the products from their cart. Each time an action is taken a notification message gives them feedback. 
 * **Toast Messages**
@@ -141,9 +143,9 @@ The site contains certain features which are not visible or available to unregis
 ### Features to implement in the Future
 
 * Functionality to let users save items to their wishlist. 
-* Function to allow users to comment on blog posts.
-* Function to allow users to add guest blog posts. 
-* Function to display a list of newly published blog posts on the blog page.
+* Functionality to allow users to comment on blog posts.
+* Functionality to allow users to add guest blog posts. 
+* Introduction of pagination on blog page to not overwhelm readers with too many posts on one page.
 
 ---
 <span id="technologies"></span>
@@ -383,5 +385,3 @@ This site is hosted on Heroku.
    * [Self Portrait Print ](https://i.pinimg.com/564x/5e/55/2a/5e552a90cfd7a4b17660694359d45806.jpg)
    * [Glowing Pumpkin Print ](https://i.pinimg.com/564x/ac/9e/43/ac9e43ba5777228cf91c70782c5ce020.jpg/)
    * [Fan Work Print ](https://i.pinimg.com/564x/4c/30/b8/4c30b8d70beb9f5fdc47fadfa5426040.jpg)
-
-
