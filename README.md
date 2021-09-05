@@ -146,6 +146,7 @@ The site contains certain features which are not visible or available to unregis
 * Functionality to allow users to comment on blog posts.
 * Functionality to allow users to add guest blog posts. 
 * Introduction of pagination on blog page to not overwhelm readers with too many posts on one page.
+* Functionality that sends out an order confirmation email once a user makes a purchase.
 
 ---
 <span id="technologies"></span>
