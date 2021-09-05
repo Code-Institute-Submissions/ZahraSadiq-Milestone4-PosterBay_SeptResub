@@ -49,7 +49,7 @@ class Product(models.Model):
             return 0
 
 
-# Product Review from YT video
+# Product Review from YT tutorial - Code with Stein
 class ProductReview(models.Model):
     product = models.ForeignKey(
         Product, related_name='reviews', on_delete=models.CASCADE)

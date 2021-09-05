@@ -19,8 +19,8 @@
         </div>
     </div>
     <!-- Search Bar -->
-    <div class="row">
-        <div class="col-12 col-lg-4 my-2 py-1 py-lg-0 text-lg-left">
+    <div class="row ">
+        <div class="col-12 col-lg-4 my-2 py-1 py-lg-0 mx-auto">
             <form method="GET" action="{% url 'products' %}">
                 <div class="input-group w-100">
                     <input class="form-control border border-black rounded-0" type="text" name="q"
@@ -34,40 +34,6 @@
                     </div>
                 </div>
             </form>
-        </div>
-        <!-- Filter by Artist -->
-        <div class="col-12 col-lg-8 my-2 py-1 py-lg-0 text-lg-right">
-            <div class="dropdown  d-inline-block ">
-                <button class="btn btn-black dropdown-toggle" type="button" id="dropdownMenuButton"
-                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Shop By Artist
-                </button>
-                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                    <a href="{% url 'products' %}?product=pop_art" class="dropdown-item">Andy Warhol</a>
-                    <a href="" class="dropdown-item">Roy Lichtenstein</a>
-                    <a href="" class="dropdown-item">David Hockney</a>
-                    <a href="" class="dropdown-item">Takashi Murakami</a>
-                    <a href="" class="dropdown-item">Banksy</a>
-                    <a href="" class="dropdown-item">Liu Wei</a>
-                    <a href="" class="dropdown-item">Basquiat</a>
-                    <a href="" class="dropdown-item">Yayoi Kasuma</a>
-                    <a href="{% url 'products' %}" class="dropdown-item">Show All</a>
-                </div>
-            </div>
-            <!-- Filter by Design -->
-            <div class="dropdown  d-inline-block ">
-                <button class="btn btn-black dropdown-toggle" type="button" id="dropdownMenuButton"
-                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Shop By Design
-                </button>
-                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                    <a href="{% url 'products' %}?categories=pop_art" class="dropdown-item">Pop Art</a>
-                    <a href="{% url 'products' %}?categories=abstract_art" class="dropdown-item">Abstract Art</a>
-                    <a href="{% url 'products' %}?categories=graffiti_art" class="dropdown-item">Graffiti Art</a>
-                    <a href="{% url 'products' %}?categories=contemporary_art" class="dropdown-item">Contemporary Art</a>
-                    <a href="{% url 'products' %}" class="dropdown-item">Show All</a>
-                </div>
-            </div>
         </div>
     </div>
     <!-- All Product Cards -->

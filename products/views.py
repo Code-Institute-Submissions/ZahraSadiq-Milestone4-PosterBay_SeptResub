@@ -14,14 +14,10 @@ def all_products(request):
 
     products = Product.objects.all()
     query = None
-    categories = None
 
     if request.GET:
-        if 'categories' in request.GET:
-            category = request.GET['categories']
-            products = products.filter(categories__name__in=category)
-            category = Categories.objects.filter(name__in=category)
 
+        """ View to filter products via search bar """
         if 'q' in request.GET:
             query = request.GET['q']
             if not query:
@@ -36,7 +32,6 @@ def all_products(request):
     context = {
         'products': products,
         'search_term': query,
-        'category': None,
     }
 
     return render(request, 'products/products.html', context)
@@ -47,7 +42,7 @@ def product_detail(request, product_id):
 
     product = get_object_or_404(Product, pk=product_id)
 
-    # Add product review (from Yt tutorial)
+    # Add product review (from Code with Stein)
 
     if request.method== 'POST' and request.user.is_authenticated:
         stars= request.POST.get('stars', 3)
