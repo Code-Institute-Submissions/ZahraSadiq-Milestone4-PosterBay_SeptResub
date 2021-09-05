@@ -287,8 +287,9 @@ This website has been tested by friends and family to check for:
 * clear user experience & navigation
 * picture loading speed
 * login/register/logout functionalities
-* edit, add, delete items functionalities
+* edit, add, delete items & posts functionalities
 * correct Toast message displays
+* receipt of registeration & forgot password emails 
 
 ### 4. Browser & Device Testing
 
@@ -304,8 +305,9 @@ This website has been tested on the following Mobile/Tablet devices:
 
 ### 5. Bugs & Problems
 
-During testing it was found that Webhook handler response fails even though order is processed and appears in both Stripe developer portal and in Admin displaying a 400 error.
-Due to time restraints, I was not able to investigate deeper. 
+Two Core Issues were found during Testing:
+* During testing it was found that Webhook handler response fails even though order is processed and appears in both Stripe developer portal and in Admin displaying a 400 error. Due to this error, an order confirmation email is also not sent out. Due to time restraints, I was not able to investigate deeper. 
+* It was also found that the first name and last name fields are not updated and saved in the my profile section once a user has filled in all their details and gone through the checkout process with the save info checkbox ticked. Various attempts were made to troubleshoot the issue but every time an attempt was made it resulted in Attribute Errors. Due to time restraints, I was not able to investigate deeper on this issue either, but I realize it could be fixed perhaps by changing the first_name & last_name fields to full_name as it is shown in the tutorials in the models.py, views.py and forms.py under checkout.
 
 ---
 
