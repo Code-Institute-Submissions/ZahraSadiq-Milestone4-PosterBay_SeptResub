@@ -194,6 +194,8 @@ This website is saved in a repository on GitHub.
   * Mobile responsiveness via chrome simulator 
   * CSS styling changes before implementing it in the code
   * Network to assess whether it was picking up Javascript (status: 200)
+* Ran a unit test on urls for products 
+   * Unfortunately I wasn't able to finish conducting all unit tests 
 
 ### 2. Testing User Stories (UX Section)
 
