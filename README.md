@@ -186,11 +186,11 @@ This website is saved in a repository on GitHub.
 ### 1. Testing Tools
 
 * [The W3C Markup Validation Service](https://validator.w3.org/) - for testing my HTML code
-  * Result: No errors
 * [The W3C CSS Validation Service: W3 Jigsaw](https://jigsaw.w3.org/css-validator/) - for testing my CSS code
-  * Result: No errors
+* Python Flake8 for pep8 style guide enforcement
+   * Result: Majority of styling errors were corrected
 * Chrome Dev Tools - for testing:
-  * Mobile responsiveness
+  * Mobile responsiveness via chrome simulator 
   * CSS styling changes before implementing it in the code
   * Network to assess whether it was picking up Javascript (status: 200)
 
