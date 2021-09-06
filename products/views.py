@@ -22,7 +22,8 @@ def all_products(request):
             query = request.GET['q']
             if not query:
                 messages.error(
-                    request, "Sorry we didn't quite get that, please try again!")
+                    request, "Sorry we didn't quite get that, \
+                    please try again!")
                 return redirect(reverse('products'))
 
             queries = Q(name__icontains=query) | Q(
@@ -44,15 +45,15 @@ def product_detail(request, product_id):
 
     # Add product review (from Code with Stein)
 
-    if request.method== 'POST' and request.user.is_authenticated:
-        stars= request.POST.get('stars', 3)
+    if request.method == 'POST' and request.user.is_authenticated:
+        stars = request.POST.get('stars', 3)
         content = request.POST.get('content', '')
         user = request.POST.get('user', '')
 
         review = ProductReview.objects.create(
             product=product, user=request.user, stars=stars,
             content=content)
-        
+
         return redirect('product_detail', product_id)
 
     # Product Review code ends here

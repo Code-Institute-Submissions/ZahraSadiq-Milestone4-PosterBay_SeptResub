@@ -2,9 +2,8 @@ from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 from django.shortcuts import render, redirect, reverse, get_object_or_404
 from django.views import generic
-from .models import Post 
+from .models import Post
 from .forms import PostForm
-
 
 # Create your views here.
 
@@ -14,6 +13,7 @@ from .forms import PostForm
 class PostList(generic.ListView):
     queryset = Post.objects.filter(status=1).order_by('-created_on')
     template_name = 'blog.html'
+
 
 class PostDetail(generic.DetailView):
     model = Post
@@ -36,14 +36,16 @@ def add_post(request):
         if form.is_valid():
             form.save()
             messages.success(request,
-            f'Yahoo! A new blog post has been uploaded to the database')
+                             f'Yahoo! A new blog post has been uploaded \
+                             to the database')
 
             return redirect(reverse('blog', args=[post.id]))
 
     except Exception as e:
         form = PostForm()
-        messages.warning(request, 'Blog post was not saved. Error: {}'.format(e))
-    
+        messages.warning(request,
+                         'Blog post was not saved. Error: {}'.format(e))
+
     context = {
         'form': form,
     }
@@ -66,14 +68,15 @@ def edit_post(request, pk):
         form = PostForm(request.POST, request.FILES, instance=post)
         if form.is_valid():
             form.save()
-            messages.success(request, 'You have successfully edited this post!')
+            messages.success(request,
+                             'You have successfully edited this post!')
             return redirect(reverse('blog'))
         else:
-            messages.error(request, 
-                            'Error: Blog post was not saved.')
+            messages.error(request,
+                           'Error: Blog post was not saved.')
     else:
         form = PostForm(instance=post)
-        
+
     template = 'edit_post.html'
     context = {
         'form': form,

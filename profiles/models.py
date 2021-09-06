@@ -13,19 +13,19 @@ class UserProfile(models.Model):
     """
     user = models.OneToOneField(User, on_delete=models.CASCADE)
     default_first_name = models.CharField(
-        max_length=200, null=True, blank=True)
+        max_length=200, blank=True)
     default_last_name = models.CharField(
-        max_length=200, null=True, blank=True)
+        max_length=200, blank=True)
     default_phone_number = models.CharField(
-        max_length=20, null=True, blank=True)
+        max_length=20, blank=True)
     default_streetaddress = models.CharField(
-        max_length=300, null=True, blank=True)
+        max_length=300, blank=True)
     default_house_number = models.CharField(
-        max_length=25, null=True, blank=True)
+        max_length=25, blank=True)
     default_city = models.CharField(
-        max_length=50, null=True, blank=True)
+        max_length=50, blank=True)
     default_postcode = models.CharField(
-        max_length=20, null=True, blank=True)
+        max_length=20, blank=True)
     default_country = CountryField(
         blank_label='Country', null=True, blank=True)
 
