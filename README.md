@@ -93,7 +93,7 @@ I opted for a clean & minimalistic but modern look & feel for this website. The 
 
 ### Wireframes & Mockups:
 
-* View website wireframes for desktop & mobile [here](https://drive.google.com/file/d/1GzmAOiWqunlDgi_0Jh5v8j8NCXKM2FGK/view?usp=sharing)
+* View website wireframes for desktop & mobile [here](https://drive.google.com/file/d/1ltLc5e3ULRmVCYiJmEDHPfyqdyan7g4O/view?usp=sharing)
 ---
 
 <span id="features"></span>
@@ -305,9 +305,11 @@ This website has been tested on the following Mobile/Tablet devices:
 
 ### 5. Bugs & Problems
 
-Two Core Issues were found during Testing:
+Two Bugs & Two Styling Issue were found during Testing:
 * During testing it was found that Webhook handler response fails even though order is processed and appears in both Stripe developer portal and in Admin displaying a 400 error. Due to this error, an order confirmation email is also not sent out. Due to time restraints, I was not able to investigate deeper. 
 * It was also found that the first name and last name fields are not updated and saved in the my profile section once a user has filled in all their details and gone through the checkout process with the save info checkbox ticked. Various attempts were made to troubleshoot the issue but every time an attempt was made it resulted in Attribute Errors. Due to time restraints, I was not able to investigate deeper on this issue either, but I realize it could be fixed perhaps by changing the first_name & last_name fields to full_name as it is shown in the tutorials in the models.py, views.py and forms.py under checkout.
+* The first styling issue found during testing was the footer on the "My Profile" page, which appears with large margins on both sides of it. I was not able to tackle this issue, but is something I would like to fix at a later date.
+* The second styling issue involves the bag page in the checkout. On mobile devices, the UX is not up to standard as the user needs to scroll to the side in order to see the full bag overview. This is also something I would like to fix at a later date.
 
 ---
 
