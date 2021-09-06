@@ -147,6 +147,7 @@ The site contains certain features which are not visible or available to unregis
 * Functionality to allow users to add guest blog posts. 
 * Introduction of pagination on blog page to not overwhelm readers with too many posts on one page.
 * Functionality that sends out an order confirmation email once a user makes a purchase.
+* Customise the verification & password reset emails so that it says from PosterBay instead of example.com
 
 ---
 <span id="technologies"></span>
@@ -361,8 +362,8 @@ This site is hosted on Heroku.
 ### 1. Code Snippets
 
 * The code in this project largely follows The Boutique Ado project by Code institute.
-* The custom Blog model was inspired by Master Code Online tutorials on YouTube and Djangocentral.com
-* The custom User Review model was inspired by Code with Stein tutorial on YouTube
+* The custom Blog model was inspired by Master Code Online tutorials on YouTube and Djangocentral.com [link](https://www.youtube.com/watch?v=dsDwnSBKf5U) & [link](https://djangocentral.com/building-a-blog-application-with-django/)
+* The custom User Review model was inspired by Code with Stein tutorial on YouTube [link](https://www.youtube.com/watch?v=Y5vvGQyHtpM)
 
 ### 2. Media
 
